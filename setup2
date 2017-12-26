@@ -42,4 +42,6 @@ cd $current_directory
 if [ -x "$(command -v xdg-open)" ]; then
   # Open browser on Raspbian (doesn't work on Lite)
   xdg-open "http://$ip_address/owncloud"
+else
+  echo "Direct your web browser to: http://$ip_address/owncloud"
 fi

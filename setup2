@@ -1,6 +1,6 @@
 #!/bin/bash
 # Based on https://www.avoiderrors.net/owncloud-10-raspberry-pi-3-raspbian-stretch/
-# Assumes that ../base/setup has been executed successfully
+# Assumes that setup1 has been executed successfully
 set -o errexit
 set -o nounset
 set -o pipefail

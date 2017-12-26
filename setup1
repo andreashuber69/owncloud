@@ -6,6 +6,6 @@ set -o nounset
 set -o pipefail
 
 # Set options that require reboot
-sudo raspi-config nonint do_change_locale en_US.UTF-8
 sudo raspi-config nonint do_memory_split 32
+sudo raspi-config nonint do_change_locale en_US.UTF-8
 reboot

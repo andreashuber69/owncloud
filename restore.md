@@ -8,4 +8,5 @@ The following steps assume that you've [successfully setup ownCloud](README.md) 
    backup. These instructions assume that it has been mounted under */media/pi/Backup*, adapt
    accordingly.
 3. `./restore /media/pi/Backup/XXXXXXXX_YYYYYY`
+   
    `XXXXXXXX_YYYYYY` is the folder of the backup you'd like to restore, adapt accordingly. 

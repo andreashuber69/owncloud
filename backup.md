@@ -8,4 +8,5 @@ The following steps assume that you've [successfully setup ownCloud](README.md).
    > NOTE: **Raspbian Lite** does not automatically mount inserted USB sticks, you have to do that
    > manually with appropriate commands.    
 3. `./backup /media/pi/Backup`
+   
    This creates a new folder under */media/pi/Backup* containing two files.

@@ -1,12 +1,18 @@
 #!/bin/bash
 # Based on https://doc.owncloud.org/server/9.0/admin_manual/maintenance/backup.html
-# Creates a new folder under /media/pi/Backup/ containing all data necessary to restore a fresh installation of ownCloud
-# to the state it had when this script was executed
+# Creates a new folder containing all data necessary to restore a fresh installation of ownCloud to the state it had
+# when this script was executed.
+# Expects as the only argument a path to a folder in which a new folder containing the backup should be created.
 set -o errexit
 set -o nounset
 set -o pipefail
 
-current_datetime=$(date +"%Y%m%d_%H%M%S")
-mkdir /media/pi/Backup/$current_datetime
-sudo tar acvf /media/pi/Backup/$current_datetime/files.tar.gz /var/www/html/owncloud/config /var/www/html/owncloud/data
-mysqldump --single-transaction -h localhost -u owncloud -p12345 owncloud > /media/pi/Backup/$current_datetime/db.bak
+if [ "$#" -ne 1 ] || [ ! -d "$1" ]; then
+  echo "Error: The only argument must be an existing folder."
+  exit 1
+fi
+
+backup_folder=$1/$(date +"%Y%m%d_%H%M%S")
+mkdir $backup_folder
+sudo tar acvf $backup_folder/files.tar.gz /var/www/html/owncloud/config /var/www/html/owncloud/data
+mysqldump --single-transaction -h localhost -u owncloud -p12345 owncloud > $backup_folder/db.bak

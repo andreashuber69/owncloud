@@ -1,10 +1,23 @@
 #!/bin/bash
 # Based on https://doc.owncloud.org/server/9.0/admin_manual/maintenance/restore.html
-# Expects as the only argument a path to a folder created by ./backup
-# This will restore a fresh installation of ownCloud to the state when ./backup was executed
+# This will restore a fresh installation of ownCloud to the state when backup was executed.
+# Expects as the only argument a path to a folder created by the backup script.
 set -o errexit
 set -o nounset
 set -o pipefail
+
+if [ "$#" -ne 1 ] || [ ! -f "$1/files.tar.gz" ] || [ ! -f "$1/db.bak" ]; then
+  echo "Error: The only argument must be a folder created by the backup script."
+  exit 1
+fi
+
+echo "This will delete all user data and then attempt to restore data from the backup."
+read -p "Do you want to continue [y/N]? " answer
+
+if [ "$answer" != "y" ] && [ "$answer" != "Y" ]; then
+  echo "Restore aborted."
+  exit 0
+fi
 
 sudo rm -r /var/www/html/owncloud/config
 sudo rm -r /var/www/html/owncloud/data

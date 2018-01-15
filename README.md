@@ -47,5 +47,5 @@ and boot the freshly installed OS.
 ## F. Next Steps
 - Import Contacts (instructions follow)
 - [Sync Contacts (Android)](sync-contacts-android.md)
-- Backup (instructions follow)
-- Restore (instructions follow)
+- [Backup](backup.md)
+- [Restore](restore.md)

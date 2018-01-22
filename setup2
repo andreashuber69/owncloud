@@ -37,6 +37,11 @@ sudo -u www-data php occ maintenance:install --database "mysql" --database-name 
 # Add our IP address to the ownCloud trusted domains
 ip_address=$(hostname -I | tr -d '[:space:]')
 sudo -u www-data php occ config:system:set trusted_domains 0 --value=$ip_address
+
+# Use cron to run background jobs
+# This should improve performance and reliability, especially WRT file locking
+sudo -u www-data php occ background:cron
+sudo crontab -u www-data -l | { cat; echo "*/15  *  *  *  * /usr/bin/php -f /var/www/html/owncloud/cron.php"; } | sudo crontab -u www-data -
 cd $current_directory
 
 if [ -x "$(command -v xdg-open)" ]; then

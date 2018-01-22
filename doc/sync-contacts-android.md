@@ -1,6 +1,6 @@
 # Sync Contacts with Android
 
-The following steps assume that you've [successfully setup ownCloud](README.md).
+The following steps assume that you've [successfully setup ownCloud](../README.md).
 
 ## A. Install DAVdroid on your Android phone
 1. Install **DAVdroid** for free through [F-Droid](https://f-droid.org/packages/at.bitfire.davdroid/) or buy it on
@@ -13,7 +13,7 @@ The following steps assume that you've [successfully setup ownCloud](README.md).
 5. Tap **Login with URL and user name**.
 6. Enter *http://[Raspberry Pi IP address]/owncloud/remote.php/dav/* for the **Base URL**.
 7. Enter the **User name** and **Password** of an **ownCloud** user created under
-   [D. Configure ownCloud](README.md#d-configure-owncloud).
+   [D. Configure ownCloud](../README.md#d-configure-owncloud).
 8. Tap **LOGIN**.
 9. Select **Groups are per-contact categories** and tap **CREATE ACCOUNT**.
 

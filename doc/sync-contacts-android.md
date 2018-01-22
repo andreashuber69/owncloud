@@ -13,7 +13,7 @@ The following steps assume that you've [successfully setup ownCloud](../README.m
 5. Tap **Login with URL and user name**.
 6. Enter *http://[Raspberry Pi IP address]/owncloud/remote.php/dav/* for the **Base URL**.
 7. Enter the **User name** and **Password** of an **ownCloud** user created under
-   [D. Configure ownCloud](../README.md#d-configure-owncloud).
+   [E. Add ownCloud Users](../README.md#e-add-owncloud-users).
 8. Tap **LOGIN**.
 9. Select **Groups are per-contact categories** and tap **CREATE ACCOUNT**.
 

@@ -38,11 +38,12 @@ and boot the freshly installed OS.
 5. Scroll down and click **Install** in the bottom right corner.
 
 ## E. Add ownCloud Users
-1. Log into ownCloud with the credentials you provided under [C](#c-install-owncloud).
-2. In the top right corner, click on the admin user name and **Users**.
-3. On the **Users** page, create a separate user for each person who needs to have access (it is recommended to only
+1. Direct your browser to *http://[Raspberry Pi IP address]/owncloud*.
+2. If not already logged in, log into ownCloud with the credentials you provided under [C](#c-install-owncloud).
+3. In the top right corner, click on the admin user name and **Users**.
+4. On the **Users** page, create a separate user for each person who needs to have access (it is recommended to only
    use the **ownCloud** administrator to create other users, not for anything else).
-4. In the top right corner, click on the admin user name and **Logout**.
+5. In the top right corner, click on the admin user name and **Logout**.
 
 ## F. Next Steps
 - Import Contacts (instructions follow)

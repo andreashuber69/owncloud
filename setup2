@@ -45,8 +45,9 @@ sudo -u www-data php occ maintenance:install --database "mysql" --database-name 
 ip_address=$(hostname -I | tr -d '[:space:]')
 sudo -u www-data php occ config:system:set trusted_domains 0 --value=$ip_address
 
-# Use cron to run background jobs
-# This should improve performance and reliability, especially WRT file locking
+# The default option for background tasks (ajax) seems to never clear stale file locks (or at least takes a very long
+# time). This is why we're using cron for background tasks.
+# https://doc.owncloud.org/server/10.0/admin_manual/configuration/server/background_jobs_configuration.html#cron-jobs
 sudo -u www-data php occ background:cron
 sudo crontab -u www-data -l | { cat; echo "*/15  *  *  *  * /usr/bin/php -f /var/www/html/owncloud/cron.php"; } | sudo crontab -u www-data -
 cd $current_directory

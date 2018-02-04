@@ -29,7 +29,7 @@ of the certificate on the server. The following steps display the fingerprint on
    tap **Accept**.
 10. Select **Groups are per-contact categories** and tap **CREATE ACCOUNT**.
 
-## B. Add the DAVdroid address book to your contacts
+## C. Add the DAVdroid address book to your contacts
 1. Open the **Android Contacts** app.
 2. Open the menu in the top right corner and tap **Accounts**.
 3. Tap **Add account** and **DAVDroid Address book**.

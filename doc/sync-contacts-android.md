@@ -9,7 +9,7 @@ certification authority (CA) like e.g. **Verisign**, the client cannot verify th
 certificate. This has to be done manually, by comparing the fingerprint of the received certificate with the one
 of the certificate on the server. The following steps display the fingerprint on the **Raspberry Pi**:
 1. On **Raspbian**, open a terminal window (**Raspbian Lite** boots directly to the command line).
-2. `openssl x509 -in /etc/ssl/certs/ssl-cert-snakeoil.pem -noout -sha256 -fingerprint`.
+2. `openssl x509 -in /etc/ssl/certs/ssl-cert-snakeoil.pem -noout -sha256 -fingerprint`
 
 ## B. Install DAVdroid on your Android phone
 1. Install **DAVdroid** for free through [F-Droid](https://f-droid.org/packages/at.bitfire.davdroid/) or buy it on

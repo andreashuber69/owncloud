@@ -25,7 +25,7 @@ of the certificate on the server. The following steps display the fingerprint on
    [E. Add ownCloud Users](../README.md#e-add-owncloud-users).
 8. Tap **LOGIN**.
 9. Compare the displayed SHA-256 fingerprint with the one we've displayed under
-   [A](#b-display-cerificate-fingerprint-on-raspbian). If the fingerprint matches, check the appropriate checkbox and
+   [A](#a-display-cerificate-fingerprint-on-raspbian). If the fingerprint matches, check the appropriate checkbox and
    tap **Accept**.
 10. Select **Groups are per-contact categories** and tap **CREATE ACCOUNT**.
 

@@ -15,7 +15,7 @@ of the certificate on the server. The following steps display the fingerprint on
 1. Install **DAVdroid** for free through [F-Droid](https://f-droid.org/packages/at.bitfire.davdroid/) or buy it on
    [Google Play](https://play.google.com/store/apps/details?id=at.bitfire.davdroid).
 2. Make sure your **Android** phone is connected to the same network as the **Raspberry Pi** running **ownCloud**. If
-   unsure, direct your browser to *http://[Raspberry Pi IP address]/owncloud*. You should see the **ownCloud** login
+   unsure, direct your browser to *https://[Raspberry Pi IP address]/owncloud*. You should see the **ownCloud** login
    screen. 
 3. Run **DAVdroid**.
 4. Tap the **+** button in the bottom right corner.

@@ -12,7 +12,7 @@ Right now, the following is working:
 - Contact sync between **ownCloud** and **Android** phones
 
 > **Note:** The **ownCloud** instance installed with the instructions below will be accessible through both https and
-> http. While all instructions use https, http should work too. https is preferred because it is the only reliable way
+> http. https is preferred because it is the only reliable way
 > to transmit sensitive data securely. However, security does have its cost, namely you have to perform a few extra
 > steps during setup (like e.g. manually verify certificate fingerprints). If you don't care that much about security
 > (e.g. because the data stored in **ownCloud** isn't sensitive or because you tightly control the network) you can just
@@ -50,7 +50,16 @@ and boot the freshly installed OS.
    use the **ownCloud** administrator to create other users, not for anything else).
 5. In the top right corner, click on the admin user name and **Logout**.
 
-## F. Next Steps
+## F. Display Cerificate Fingerprint on Raspbian
+When SSL is activated in **Apache**, a self-signed certificate is generated. By default, **Apache** presents this
+certificate whenever it receives a https connection request. However, since the certificate is not signed by a
+certification authority (CA) like e.g. **Verisign**, the client cannot verify that it did get the correct
+certificate. This has to be done manually, by comparing the fingerprint of the received certificate with the one
+of the certificate on the server. The following steps display the fingerprint on the **Raspberry Pi**:
+1. On **Raspbian**, open a terminal window (**Raspbian Lite** boots directly to the command line).
+2. `openssl x509 -in /etc/ssl/certs/ssl-cert-snakeoil.pem -noout -sha1 -fingerprint`
+
+## G. Next Steps
 - [Backup](doc/backup.md)
 - [Restore](doc/restore.md)
 - [Sync Files (Android)](doc/sync-files-android.md)

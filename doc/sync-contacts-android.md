@@ -9,7 +9,7 @@ certification authority (CA) like e.g. **Verisign**, the client cannot verify th
 certificate. This has to be done manually, by comparing the fingerprint of the received certificate with the one
 of the certificate on the server. The following steps display the fingerprint on the **Raspberry Pi**:
 1. On **Raspbian**, open a terminal window (**Raspbian Lite** boots directly to the command line).
-2. `openssl x509 -in /etc/ssl/certs/ssl-cert-snakeoil.pem -noout -sha256 -fingerprint`
+2. `openssl x509 -in /etc/ssl/certs/ssl-cert-snakeoil.pem -noout -sha1 -fingerprint`
 
 ## B. Install DAVdroid on your Android phone
 1. Install **DAVdroid** for free through [F-Droid](https://f-droid.org/packages/at.bitfire.davdroid/) or buy it on
@@ -24,7 +24,7 @@ of the certificate on the server. The following steps display the fingerprint on
 7. Enter the **User name** and **Password** of an **ownCloud** user created under
    [E. Add ownCloud Users](../README.md#e-add-owncloud-users).
 8. Tap **LOGIN**.
-9. Compare the displayed SHA-256 fingerprint with the one we've displayed under
+9. Compare the displayed SHA-1 fingerprint with the one we've displayed under
    [A](#a-display-cerificate-fingerprint-on-raspbian). If the fingerprint matches, check the appropriate checkbox and
    tap **Accept**.
 10. Select **Groups are per-contact categories** and tap **CREATE ACCOUNT**.
@@ -37,6 +37,7 @@ of the certificate on the server. The following steps display the fingerprint on
    calendar (if prompted).
 5. Check **Contacts** and tap the **Sync** icon.
 6. Tap the **Back** button until you are back in the **Android Contacts** app.
-7. You should now see the **ownCloud** contacts (if any) and you can now create contacts that will be stored in
-   **ownCloud**.
+
+You should now see the **ownCloud** contacts (if any) and you can now create contacts that will be stored in
+**ownCloud**.
    

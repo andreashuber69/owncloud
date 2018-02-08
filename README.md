@@ -34,7 +34,7 @@ and boot the freshly installed OS.
 2. `cd owncloud`
 3. `./setup2` (prompts for the credentials for the **ownCloud** administrator)
 
-## D. Install ownCloud Contacts app
+## D. Install ownCloud Contacts App
 1. Direct your browser to *https://[Raspberry Pi IP address]/owncloud* (on **Raspbian** the script does this
    automatically).
 2. Enter the credentials you provided under [C](#c-install-owncloud).

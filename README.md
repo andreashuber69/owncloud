@@ -35,13 +35,17 @@ and boot the freshly installed OS.
 2. `cd owncloud`
 3. `./setup2` (prompts for the credentials for the **ownCloud** administrator)
 
-## D. Install ownCloud Contacts App
+## D. Install ownCloud Contacts and Tasks Apps
 1. Direct your browser to *https://[Raspberry Pi IP address]/owncloud* (on **Raspbian** the script does this
    automatically).
 2. Enter the credentials you provided under [C](#c-install-owncloud).
 3. Click the menu icon in the top left corner and click **Market**.
 4. Click the **Productivity** category and the **Contacts** app.
-5. Scroll down and click **Install** in the bottom right corner.
+5. Click **Install** in the bottom right corner.
+6. Click the **Productivity** category and the **Tasks** app.
+7. Click **Install** in the bottom right corner.
+8. If you plan on hosting your calendar in **ownCloud**, you can install that app too. Note however that I've not
+   tested this in any way.
 
 ## E. Add ownCloud Users
 1. Direct your browser to *https://[Raspberry Pi IP address]/owncloud*.

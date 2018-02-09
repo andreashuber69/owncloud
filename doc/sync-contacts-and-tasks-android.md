@@ -1,10 +1,10 @@
-# Sync Contacts with Android
+# Sync Contacts and Tasks with Android
 
 The following steps assume that you've [successfully setup ownCloud](../README.md).
 
-## A. Install DAVdroid on your Android phone
-1. Install **DAVdroid** for free through [F-Droid](https://f-droid.org/packages/at.bitfire.davdroid/) or buy it on
-   [Google Play](https://play.google.com/store/apps/details?id=at.bitfire.davdroid).
+## A. Install DAVdroid & OpenTasks on your Android phone
+1. Install **DAVdroid** and **OpenTasks** for free through [F-Droid](https://f-droid.org/packages/at.bitfire.davdroid/)
+   or acquire them on [Google Play](https://play.google.com/store/apps/details?id=at.bitfire.davdroid).
 2. Make sure your **Android** phone is connected to the same network as the **Raspberry Pi** running **ownCloud**. If
    unsure, direct your browser to *https://[Raspberry Pi IP address]/owncloud*. You should see the **ownCloud** login
    screen. 
@@ -29,6 +29,18 @@ The following steps assume that you've [successfully setup ownCloud](../README.m
 5. Check **Contacts** and tap the **Sync** icon.
 6. Tap the **Back** button until you are back in the **Android Contacts** app.
 
-You should now see the **ownCloud** contacts (if any) and you can now create contacts that will be stored in
-**ownCloud**.
-   
+You should now see the **ownCloud** contacts (if any). Moreover, when creating a new contact, you should now have the
+option to store it in **ownCloud**. 
+
+## C. Create a Tasks list
+1. Run **DAVdroid**.
+2. Tap the account created under [A](#a-install-davdroid-on-your-android-phone).
+3. Tap the **CalDAV** menu button and tap **Create new calendar**.
+4. Enter *Tasks* as **Display name (title) of this collection**, select the appropriate **Time zone** and select **Task
+   list (only tasks)**.
+5. Tap **CREATE**.
+6. Check **Tasks** and tap the **Sync** icon.
+7. Run **Tasks** (installed with **OpenTasks**).
+8. You can now create new tasks (**+** button in the bottom right corner).
+9. It is probably worth customizing the different views by checking/unchecking **Show completed tasks** to suit your
+   needs.

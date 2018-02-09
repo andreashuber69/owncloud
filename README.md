@@ -10,6 +10,7 @@ Right now, the following is working:
 - File sync between **owncloud** and **Android** phones
 - Contact import into **ownCloud** via **vCard** files
 - Contact sync between **ownCloud** and **Android** phones
+- Tasks sync between **ownCloud** and **Android** phones
 
 > **Note:** The **ownCloud** instance installed with the instructions below will be accessible through both https and
 > http. https is preferred because it is the only reliable way
@@ -65,4 +66,4 @@ of the certificate on the server. The following steps display the fingerprint on
 - [Sync Files (Android)](doc/sync-files-android.md)
 - [Sync Files (Windows)](doc/sync-files-windows.md)
 - Import Contacts (instructions follow)
-- [Sync Contacts (Android)](doc/sync-contacts-android.md)
+- [Sync Contacts and Tasks (Android)](doc/sync-contacts-and-tasks-android.md)

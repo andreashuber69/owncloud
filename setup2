@@ -9,14 +9,14 @@ set -o pipefail
 read -p "ownCloud admin username: " owncloud_admin_user
 read -s -p "ownCloud admin password: " owncloud_admin_password
 
-# Install Apache and packages required by ownCloud
-sudo apt-get install apache2 mariadb-server libapache2-mod-php7.0 php7.0-gd php7.0-json php7.0-mysql php7.0-curl php7.0-intl php7.0-mcrypt php-imagick php7.0-zip php7.0-xml php7.0-mbstring --assume-yes
+# Install multi-core compression, Apache and packages required by ownCloud
+sudo apt-get install pigz apache2 mariadb-server libapache2-mod-php7.0 php7.0-gd php7.0-json php7.0-mysql php7.0-curl php7.0-intl php7.0-mcrypt php-imagick php7.0-zip php7.0-xml php7.0-mbstring --assume-yes
 sudo systemctl start apache2
 sudo systemctl enable apache2
 
 # Install ownCloud
 wget https://download.owncloud.org/community/owncloud-10.0.4.tar.bz2
-tar -xvf owncloud-10.0.4.tar.bz2
+tar --extract --verbose --file=owncloud-10.0.4.tar.bz2
 rm owncloud-10.0.4.tar.bz2
 sudo chown -R www-data:www-data owncloud
 sudo mv owncloud /var/www/html

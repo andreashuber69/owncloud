@@ -1,6 +1,6 @@
 #!/bin/bash
-# Based on https://doc.owncloud.org/server/9.0/admin_manual/maintenance/restore.html
-# This will restore a fresh installation of ownCloud to the state when backup was executed.
+# Based on https://doc.owncloud.org/server/10.0/admin_manual/maintenance/restore.html
+# This will restore a fresh installation of ownCloud to the state it had when backup was executed.
 # Expects as the only argument a path to a folder created by the backup script.
 set -o errexit
 set -o nounset
@@ -19,7 +19,11 @@ if [ "$answer" != "y" ] && [ "$answer" != "Y" ]; then
   exit 0
 fi
 
+echo "Deleting current files..."
 sudo rm -r /var/www/html/owncloud/config
 sudo rm -r /var/www/html/owncloud/data
-sudo tar xzpvf $1/files.tar.gz -C /
+echo "Restoring files..."
+sudo tar --extract --file=$1/files.tar.gz --preserve-permissions --directory=/var/www/html/owncloud
+echo "Restoring database..."
 mysql -h localhost -u owncloud -p12345 owncloud < $1/db.bak
+echo "Restore completed successfully."

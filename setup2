@@ -34,7 +34,7 @@ sudo a2ensite default-ssl
 sudo systemctl restart apache2
 
 # Create mysql DB
-sudo mysql -u "root" "-praspberry" < "create-db.sql"
+sudo mysql -u root -praspberry < create-db.sql
 
 # Configure ownCloud
 current_directory=$PWD

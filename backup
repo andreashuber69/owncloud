@@ -15,9 +15,9 @@ fi
 backup_folder=$1/$(date +"%Y%m%d_%H%M%S")
 mkdir $backup_folder
 echo "Backing up files..."
-sudo tar --create --file=$backup_folder/files.tar.gz --use-compress-program=pigz --directory=/var/www/html/owncloud config data
+sudo tar --create --file=$backup_folder/owncloud-files.tar.gz --use-compress-program=pigz --directory=/var/www/html/owncloud config data
 echo "Verifying files..."
-sudo tar --compare --file=$backup_folder/files.tar.gz --directory=/var/www/html/owncloud
+sudo tar --compare --file=$backup_folder/owncloud-files.tar.gz --directory=/var/www/html/owncloud
 echo "Backing up database..."
-mysqldump --single-transaction -h localhost -u owncloud -p12345 owncloud > $backup_folder/db.bak
+mysqldump --single-transaction -h localhost -u owncloud -p12345 owncloud > $backup_folder/owncloud-db-dump.sql
 echo "Backup completed successfully."

@@ -68,6 +68,6 @@ of the certificate on the server. The following steps display the fingerprint on
 - [Backup](doc/backup.md)
 - [Restore](doc/restore.md)
 - [Sync Files (Android)](doc/sync-files-android.md)
-- [Sync Files (Windows)](doc/sync-files-windows.md)
+- [Sync Files (Windows & Ubuntu)](doc/sync-files-desktop.md)
 - Import Contacts (instructions follow)
 - [Sync Contacts and Tasks (Android)](doc/sync-contacts-and-tasks-android.md)

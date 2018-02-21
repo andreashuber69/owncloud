@@ -30,6 +30,8 @@ The following steps assume that you've [successfully setup ownCloud](../README.m
 3. Enter the **Username** and **Password** of an **ownCloud** user created under
    [E. Add ownCloud Users](../README.md#e-add-owncloud-users) and click **Next >**.
 4. Choose what to sync, select a local folder and click **Connect...**.
+5. Click **General** and check **Launch on System Startup**. This ensures that the client is started the next time the
+   computer is started.  
 
 The chosen local folder is now synchronized with the remote folder. Locally added files will automatically be
 copied to **ownCloud**. Locally removed files will automatically deleted from **ownCloud**. 

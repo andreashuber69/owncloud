@@ -2,7 +2,7 @@
 The following steps assume that you've [successfully setup ownCloud](../README.md) and that you've
 [created a backup](backup.md). If you'd like to restore a backup after setting up **ownCloud** from scratch, you need
 to follow the **ownCloud** setup instructions up to and including step
-[D. Install ownCloud Contacts App](../README.md#d-install-owncloud-contacts-app).
+[D. Install ownCloud Contacts App](../README.md#d-install-owncloud-contacts-and-tasks-app).
 
 1. On **Raspbian**, open a terminal window (**Raspbian Lite** boots directly to the command line).
 2. `cd owncloud`

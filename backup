@@ -1,23 +1,21 @@
 #!/bin/bash
-# Based on https://doc.owncloud.org/server/10.0/admin_manual/maintenance/backup.html
-# Creates a new folder containing all data necessary to restore a fresh installation of ownCloud to the state it had
+# Based on https://doc.owncloud.org/server/10.0/admin_manual/maintenance/backup.html.
+# Expects as the only argument a path to an existing empty folder.
+# In the specified folder creates the files necessary to restore a fresh installation of ownCloud to the state it had
 # when this script was executed.
-# Expects as the only argument a path to a folder in which a new folder containing the backup should be created.
 set -o errexit
 set -o nounset
 set -o pipefail
 
-if [ "$#" -ne 1 ] || [ ! -d "$1" ]; then
-  echo "Error: The only argument must be an existing folder."
+if [[ ("$#" -ne 1) || (! -d "$1") || "$(ls -A $1)" ]]; then
+  echo "Error: The only argument must be an existing empty folder."
   exit 1
 fi
 
-backup_folder=$1/$(date +"%Y%m%d_%H%M%S")
-mkdir $backup_folder
 echo "Backing up files..."
-sudo tar --create --file=$backup_folder/owncloud-files.tar.gz --use-compress-program=pigz --directory=/var/www/html/owncloud config data
+sudo tar --create --file=$1/owncloud-files.tar.gz --use-compress-program=pigz --directory=/var/www/html/owncloud config data
 echo "Verifying files..."
-sudo tar --compare --file=$backup_folder/owncloud-files.tar.gz --directory=/var/www/html/owncloud
+sudo tar --compare --file=$1/owncloud-files.tar.gz --directory=/var/www/html/owncloud
 echo "Backing up database..."
-mysqldump --single-transaction -h localhost -u owncloud -p12345 owncloud > $backup_folder/owncloud-db-dump.sql
+mysqldump --single-transaction -h localhost -u owncloud -p12345 owncloud > $1/owncloud-db-dump.sql
 echo "Backup completed successfully."

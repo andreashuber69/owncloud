@@ -7,6 +7,5 @@ to follow the **ownCloud** setup instructions up to and including step
 1. On **Raspbian**, open a terminal window (**Raspbian Lite** boots directly to the command line).
 2. `cd owncloud`
 3. Insert the USB stick or other external storage medium that you've used when you made the backup. These instructions
-   assume that it has been mounted under */media/pi/Backup*, adapt accordingly. Moreover, in step 4 replace
-   *XXXXXXXX_YYYYYY* with the name of the folder of the backup you'd like to restore.
-4. `./restore /media/pi/Backup/XXXXXXXX_YYYYYY`
+   assume that it has been mounted under */media/pi/Backup*, adapt accordingly.
+4. `./restore /media/pi/Backup`

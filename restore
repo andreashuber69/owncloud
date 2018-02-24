@@ -1,13 +1,13 @@
 #!/bin/bash
-# Based on https://doc.owncloud.org/server/10.0/admin_manual/maintenance/restore.html
+# Based on https://doc.owncloud.org/server/10.0/admin_manual/maintenance/restore.html.
+# Expects as the only argument a path to a folder containing the files created by the backup script.
 # This will restore a fresh installation of ownCloud to the state it had when backup was executed.
-# Expects as the only argument a path to a folder created by the backup script.
 set -o errexit
 set -o nounset
 set -o pipefail
 
-if [ "$#" -ne 1 ] || [ ! -f "$1/files.tar.gz" ] || [ ! -f "$1/db.bak" ]; then
-  echo "Error: The only argument must be a folder created by the backup script."
+if [ "$#" -ne 1 ] || [ ! -f "$1/owncloud-files.tar.gz" ] || [ ! -f "$1/owncloud-db-dump.sql" ]; then
+  echo "Error: The only argument must be a folder containing the files created by the backup script."
   exit 1
 fi
 

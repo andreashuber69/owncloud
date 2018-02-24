@@ -1,6 +1,6 @@
 #!/bin/bash
-# Based on https://www.avoiderrors.net/owncloud-10-raspberry-pi-3-raspbian-stretch/
-# Assumes that setup2 will be executed after the reboot
+# Based on https://www.avoiderrors.net/owncloud-10-raspberry-pi-3-raspbian-stretch/.
+# Assumes that setup2 will be executed after the reboot.
 set -o errexit
 set -o nounset
 set -o pipefail

@@ -24,6 +24,6 @@ echo "Verifying database..."
 # recreated. mysqldbcompare would surely help here, but it appears that using that would require a specific
 # Python version.
 sudo mysql -u root -praspberry -e "create database owncloud_restore_test"
-mysql -u owncloud -p12345 owncloud_restore_test < $backup_folder/owncloud-db-dump.sql
+mysql -u owncloud -p12345 owncloud_restore_test < $1/owncloud-db-dump.sql
 sudo mysql -u root -praspberry -e "drop database owncloud_restore_test"
 echo "Backup completed successfully."

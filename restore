@@ -6,7 +6,7 @@ set -o errexit
 set -o nounset
 set -o pipefail
 
-if [ "$#" -ne 1 ] || [ ! -f "$1/owncloud-files.tar.gz" ] || [ ! -f "$1/owncloud-db-dump.sql" ]; then
+if [[ ("$#" -ne 1) || (! -f "$1/owncloud-files.tar.gz") || (! -f "$1/owncloud-db-dump.sql") ]]; then
   echo "Error: The only argument must be a folder containing the files created by the backup script."
   exit 1
 fi
@@ -14,7 +14,7 @@ fi
 echo "This will delete all user data and then attempt to restore data from the backup."
 read -p "Do you want to continue [y/N]? " answer
 
-if [ "$answer" != "y" ] && [ "$answer" != "Y" ]; then
+if [[ ("$answer" != "y") && ("$answer" != "Y") ]]; then
   echo "Restore aborted."
   exit 0
 fi

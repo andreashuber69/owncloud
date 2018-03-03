@@ -9,8 +9,8 @@ set -o pipefail
 read -p "ownCloud admin username: " owncloud_admin_user
 read -s -p "ownCloud admin password: " owncloud_admin_password
 
-# Install multi-core compression, Apache and packages required by ownCloud
-sudo apt-get install pigz apache2 mariadb-server libapache2-mod-php7.0 php7.0-gd php7.0-json php7.0-mysql php7.0-curl php7.0-intl php7.0-mcrypt php-imagick php7.0-zip php7.0-xml php7.0-mbstring --assume-yes
+# Install Apache and packages required by ownCloud
+sudo apt-get install apache2 mariadb-server libapache2-mod-php7.0 php7.0-gd php7.0-json php7.0-mysql php7.0-curl php7.0-intl php7.0-mcrypt php-imagick php7.0-zip php7.0-xml php7.0-mbstring --assume-yes
 sudo systemctl start apache2
 sudo systemctl enable apache2
 

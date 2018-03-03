@@ -49,12 +49,15 @@ sudo -u www-data php occ config:system:set trusted_domains 0 --value=$ip_address
 # time). This is why we're using cron for background tasks.
 # https://doc.owncloud.org/server/10.0/admin_manual/configuration/server/background_jobs_configuration.html#cron-jobs
 sudo -u www-data php occ background:cron
-sudo crontab -u www-data -l | { cat; echo "*/15  *  *  *  * /usr/bin/php -f /var/www/html/owncloud/cron.php"; } | sudo crontab -u www-data -
 cd $current_directory
+
+# A non-existing crontab makes the following return a non-zero exit code, even though the crontab is modified
+# correctly. The || true at the end makes sure that the script continues.
+sudo crontab -u www-data -l | { cat; echo "*/15  *  *  *  * /usr/bin/php -f /var/www/html/owncloud/cron.php"; } | sudo crontab -u www-data - || true
 
 if [ -x "$(command -v xdg-open)" ]; then
   # Open browser on Raspbian (doesn't work on Lite)
-  xdg-open "http://$ip_address/owncloud"
+  xdg-open "http://$ip_address/owncloud" &
 else
   echo "Direct your web browser to: http://$ip_address/owncloud"
 fi

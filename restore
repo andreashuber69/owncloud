@@ -40,7 +40,7 @@ echo "If no upgrades are necessary, the normal login screen will be shown."
 
 if [ -x "$(command -v xdg-open)" ]; then
   # Open browser on Raspbian (doesn't work on Lite)
-  xdg-open "http://$ip_address/owncloud"
+  xdg-open "http://$ip_address/owncloud" &
 else
   echo "Direct your web browser to: http://$ip_address/owncloud"
 fi

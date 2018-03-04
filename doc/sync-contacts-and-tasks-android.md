@@ -17,7 +17,7 @@ The following steps assume that you've [successfully setup ownCloud](../README.m
 8. Tap **LOGIN**.
 9. Compare the displayed SHA-1 fingerprint with the one we've displayed under
    [F. Display Certificate Fingerprint on Raspbian](../README.md#f-display-cerificate-fingerprint-on-raspbian).
-   If the fingerprint matches, check the appropriate checkbox and tap **Accept**.
+   If the fingerprint matches, check **I have manually verified the whole fingerprint** and tap **ACCEPT**.
 10. Select **Groups are per-contact categories** and tap **CREATE ACCOUNT**.
 
 ## B. Add the DAVdroid address book to your contacts

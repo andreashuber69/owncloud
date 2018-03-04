@@ -27,3 +27,20 @@ sudo tar --extract --file=$1/owncloud-files.tar.gz --preserve-permissions --dire
 echo "Restoring database..."
 mysql -u owncloud -p12345 owncloud < $1/owncloud-db-dump.sql
 echo "Restore completed successfully."
+
+# Add our IP address to the ownCloud trusted domains. This is necessary when we restore on new hardware.
+current_directory=$PWD
+cd /var/www/html/owncloud/
+ip_address=$(hostname -I | tr -d '[:space:]')
+sudo -u www-data php occ config:system:set trusted_domains 0 --value=$ip_address
+cd $current_directory
+
+echo "If app data upgrades are necessary, you are prompted to upgrade by ownCloud web access."
+echo "If no upgrades are necessary, the normal login screen will be shown." 
+
+if [ -x "$(command -v xdg-open)" ]; then
+  # Open browser on Raspbian (doesn't work on Lite)
+  xdg-open "http://$ip_address/owncloud"
+else
+  echo "Direct your web browser to: http://$ip_address/owncloud"
+fi

@@ -2,39 +2,35 @@
 
 The following steps assume that you've [successfully setup ownCloud](../README.md).
 
-## A. Install DAVdroid & OpenTasks on your Android phone
-1. Install **DAVdroid** and **OpenTasks** for free through [F-Droid](https://f-droid.org/packages/at.bitfire.davdroid/)
-   or acquire them on [Google Play](https://play.google.com/store/apps/details?id=at.bitfire.davdroid).
-2. Make sure your **Android** phone is connected to the same network as the **Raspberry Pi** running **ownCloud**. If
+## A. Install DAVdroid & OpenTasks on your Android Phone
+Install **DAVdroid** and **OpenTasks** for free through [F-Droid](https://f-droid.org) or acquire them on
+[Google Play](https://play.google.com).
+
+## B. Sync ownCloud Contacts, Calendars and Tasks to your Android Phone
+1. Make sure your **Android** phone is connected to the same network as the **Raspberry Pi** running **ownCloud**. If
    unsure, direct your browser to *https://[Raspberry Pi IP address]/owncloud*. You should see the **ownCloud** login
-   screen. 
-3. Run **DAVdroid**.
-4. Tap the **+** button in the bottom right corner.
-5. Tap **Login with URL and user name**.
-6. Enter *https://[Raspberry Pi IP address]/owncloud/remote.php/dav/* for the **Base URL**.
-7. Enter the **User name** and **Password** of an **ownCloud** user created under
+   screen.
+2. Run **DAVdroid**.
+3. Tap the **+** button in the bottom right corner.
+4. Tap **Login with URL and user name**.
+5. Enter *https://[Raspberry Pi IP address]/owncloud/remote.php/dav/* for the **Base URL**.
+6. Enter the **User name** and **Password** of an **ownCloud** user created under
    [E. Add ownCloud Users](../README.md#e-add-owncloud-users).
-8. Tap **LOGIN**.
-9. Compare the displayed SHA-1 fingerprint with the one we've displayed under
+7. Tap **LOGIN**.
+8. Compare the displayed SHA-1 fingerprint with the one we've displayed under
    [F. Display Certificate Fingerprint on Raspbian](../README.md#f-display-cerificate-fingerprint-on-raspbian).
    If the fingerprint matches, check **I have manually verified the whole fingerprint** and tap **ACCEPT**.
-10. Select **Groups are per-contact categories** and tap **CREATE ACCOUNT**.
+9. Select **Groups are per-contact categories** and tap **CREATE ACCOUNT**.
+10. Tap the account you just created and allow access to your contacts, calendars and task lists (if prompted).
+11. Check all the contacts, calendars and task lists you want to work with on your phone, tap the **Sync** icon and wait
+    for the progress bars to stop moving.
 
-## B. Add the DAVdroid address book to your contacts
-1. Open the **Android Contacts** app.
-2. Open the menu in the top right corner and tap **Accounts**.
-3. Tap **Add account** and **DAVDroid Address book**.
-4. Select the account created under [A](#a-install-davdroid-on-your-android-phone) and allow access to your contacts and
-   calendar (if prompted).
-5. Check **Contacts** and tap the **Sync** icon.
-6. Tap the **Back** button until you are back in the **Android Contacts** app.
+## C. Use ownCloud Contacts on your Phone
+Run the built-in **Contacts** app. You should now see all the **ownCloud** contacts synchronized in the previous step (if any). Moreover, when creating a new contact, you should now have the option to store it in **ownCloud**. 
 
-You should now see the **ownCloud** contacts (if any). Moreover, when creating a new contact, you should now have the
-option to store it in **ownCloud**. 
-
-## C. Create a Tasks list
+## D. Create a Tasks list
 1. Run **DAVdroid**.
-2. Tap the account created under [A](#a-install-davdroid-on-your-android-phone).
+2. Tap the account created under [B](#b-sync-owncloud-contacts-calendars-and-tasks-to-your-android-phone).
 3. Tap the **CalDAV** menu button and tap **Create new calendar**.
 4. Enter *Tasks* as **Display name (title) of this collection**, select the appropriate **Time zone** and select **Task
    list (only tasks)**.

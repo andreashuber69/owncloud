@@ -3,8 +3,8 @@
 The following steps assume that you've [successfully setup ownCloud](../README.md).
 
 ## A. Install DAVdroid & OpenTasks on your Android Phone
-Install **DAVdroid** and **OpenTasks** for free through [F-Droid](https://f-droid.org) or acquire them on
-[Google Play](https://play.google.com).
+Install **DAVdroid** and **OpenTasks** for free through [F-Droid](https://f-droid.org) or acquire them through the
+**Google Play Store** app.
 
 ## B. Sync ownCloud Contacts, Calendars and Tasks to your Android Phone
 1. Make sure your **Android** phone is connected to the same network as the **Raspberry Pi** running **ownCloud**. If

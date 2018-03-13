@@ -44,6 +44,7 @@ Acquire **FolderSync** or **FolderSync Pro** through the **Google Play Store** a
      be reached. It's optional to fill this out, but it's a good idea, so that your phone will not attempt to
      synchronize when it's connected to different WLANs.
    - **Show notification on sync error**: **On**
+   - All other fields retain their default value.
 3. Tap **SAVE**.
 4. Tap the **SYNC** button.
 

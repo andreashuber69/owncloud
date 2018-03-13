@@ -5,7 +5,7 @@ These days, many people store almost all of their data with a cloud service offe
 Google. The data is often very sensitive in nature (e.g. Photos, Contacts, Calendars) and is rarely encrypted. 
 
 This project is dedicated to provide detailed instructions on how to set up, use and maintain your own alternative to
-such a cloud service without compromising much in terms of functionality or convenience. The center piece is a tiny,
+such a cloud service without compromising much in terms of functionality and convenience. The center piece is a tiny,
 energy-efficient server running in your home 24/7.
 
 ## Audience & Prerequisites
@@ -13,6 +13,8 @@ While I try very hard to clearly describe every tiny step on the way to your dat
 impossible to suit everyone. So, to successfully follow these instructions, you should at least have the following:
 - Experience using a current desktop or laptop computer (running **Linux**, **Mac OS** or **Windows**) with a keyboard
   and mouse
+- Experience on the command line (i.e. in a terminal window). The instructions will clearly detail exactly what commands
+  need to be issued, so that you only need to copy them from the instructions and paste them into the terminal window.
 - Experience using a current mobile phone running **Android**
 - A home network: As soon as you have the box of an internet provider running at home, chances are very high you already
   have a home network, at least a wireless one (which is all we need).
@@ -20,7 +22,9 @@ impossible to suit everyone. So, to successfully follow these instructions, you 
 - A keyboard and mouse with USB A connectors
 - A TV or computer monitor with a HDMI A input (almost all recent devices have such an input)
 - A HDMI cable with two HMDI A connectors
-- Spare USD 70 to spend on your new home server
+- Spare USD 70 (or equivalent) to buy your new home server
+- A day of spare time to set up and test everything
+- A minute or two per week to make a backup copy of your data 
 
 ## Scope
 These instructions only cover what I've personally done (and tested), namely:

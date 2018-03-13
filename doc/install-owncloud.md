@@ -54,9 +54,9 @@ of the certificate on the server. The following steps display the fingerprint on
 2. `openssl x509 -in /etc/ssl/certs/ssl-cert-snakeoil.pem -noout -sha1 -fingerprint`
 
 ## G. Next Steps
-- [Backup](doc/backup.md)
-- [Restore](doc/restore.md)
-- [Sync Files (Android)](doc/sync-files-android.md)
-- [Sync Files (Windows & Ubuntu)](doc/sync-files-desktop.md)
+- [Backup](backup.md)
+- [Restore](restore.md)
+- [Sync Files (Android)](sync-files-android.md)
+- [Sync Files (Windows & Ubuntu)](sync-files-desktop.md)
 - Import Contacts (instructions follow)
-- [Sync Contacts and Tasks (Android)](doc/sync-contacts-and-tasks-android.md)
+- [Sync Contacts and Tasks (Android)](sync-contacts-and-tasks-android.md)

@@ -1,6 +1,6 @@
 # Sync Files with Android
 
-The following steps assume that you've [successfully setup ownCloud](../README.md).
+The following steps assume that you've [successfully setup ownCloud](install-owncloud.md).
 
 ## A. Install FolderSync on your Android phone
 Acquire **FolderSync** or **FolderSync Pro** through the **Google Play Store** app.
@@ -21,7 +21,7 @@ Acquire **FolderSync** or **FolderSync Pro** through the **Google Play Store** a
      below.
    - **Server address**: *https://[Raspberry Pi IP address]/owncloud*
    - **Login name**: The user name of an **ownCloud** user created under
-     [E. Add ownCloud Users](../README.md#e-add-owncloud-users)
+     [E. Add ownCloud Users](install-owncloud.md#e-add-owncloud-users)
    - **Password**: The **Password** of the **ownCloud** user
    - **Allow self-signed cert**: **On**
    - All other fields retain their default value.

@@ -1,5 +1,5 @@
 # Sync Files with a Desktop Computer
-The following steps assume that you've [successfully setup ownCloud](../README.md).
+The following steps assume that you've [successfully setup ownCloud](install-owncloud.md).
 
 ## A. Install the ownCloud Desktop Client
 
@@ -23,10 +23,10 @@ The following steps assume that you've [successfully setup ownCloud](../README.m
    **Server Address** and click **Next >**.
 2. In the **Untrusted Certificate** dialog, compare the displayed SHA-1 fingerprint with the one we've displayed
    under
-   [F. Display Certificate Fingerprint on Raspbian](../README.md#f-display-cerificate-fingerprint-on-raspbian).
+   [F. Display Certificate Fingerprint on Raspbian](install-owncloud.md#f-display-cerificate-fingerprint-on-raspbian).
    If the fingerprint matches, check **Trust this certificate anyway** and click **OK**.
 3. Enter the **Username** and **Password** of an **ownCloud** user created under
-   [E. Add ownCloud Users](../README.md#e-add-owncloud-users) and click **Next >**.
+   [E. Add ownCloud Users](install-owncloud.md#e-add-owncloud-users) and click **Next >**.
 4. Choose what to sync, select a local folder and click **Connect...**.
 5. Click **General** and check **Launch on System Startup**. This ensures that the client is started the next time the
    computer is started.  

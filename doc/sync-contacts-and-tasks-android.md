@@ -1,6 +1,6 @@
 # Sync Contacts and Tasks with Android
 
-The following steps assume that you've [successfully setup ownCloud](../README.md).
+The following steps assume that you've [successfully setup ownCloud](install-owncloud.md).
 
 ## A. Install DAVdroid & OpenTasks on your Android Phone
 Install **DAVdroid** and **OpenTasks** for free through [F-Droid](https://f-droid.org) or acquire them through the
@@ -15,10 +15,10 @@ Install **DAVdroid** and **OpenTasks** for free through [F-Droid](https://f-droi
 4. Tap **Login with URL and user name**.
 5. Enter *https://[Raspberry Pi IP address]/owncloud/remote.php/dav/* for the **Base URL**.
 6. Enter the **User name** and **Password** of an **ownCloud** user created under
-   [E. Add ownCloud Users](../README.md#e-add-owncloud-users).
+   [E. Add ownCloud Users](install-owncloud.md#e-add-owncloud-users).
 7. Tap **LOGIN**.
 8. Compare the displayed SHA-1 fingerprint with the one we've displayed under
-   [F. Display Certificate Fingerprint on Raspbian](../README.md#f-display-cerificate-fingerprint-on-raspbian).
+   [F. Display Certificate Fingerprint on Raspbian](install-owncloud.md#f-display-cerificate-fingerprint-on-raspbian).
    If the fingerprint matches, check **I have manually verified the whole fingerprint** and tap **ACCEPT**.
 9. Select **Groups are per-contact categories** and tap **CREATE ACCOUNT**.
 10. Tap the account you just created and allow access to your contacts, calendars and task lists (if prompted).
@@ -26,7 +26,8 @@ Install **DAVdroid** and **OpenTasks** for free through [F-Droid](https://f-droi
     for the progress bars to stop moving.
 
 ## C. Use ownCloud Contacts on your Phone
-Run the built-in **Contacts** app. You should now see all the **ownCloud** contacts synchronized in the previous step (if any). Moreover, when creating a new contact, you should now have the option to store it in **ownCloud**. 
+Run the built-in **Contacts** app. You should now see all the **ownCloud** contacts synchronized in the previous step
+(if any). Moreover, when creating a new contact, you should now have the option to store it in **ownCloud**. 
 
 ## D. Create a Tasks list
 1. Run **DAVdroid**.

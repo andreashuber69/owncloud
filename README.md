@@ -2,9 +2,10 @@
 
 ## Introduction
 These days, many people store almost all of their data with a cloud service offered by the likes of Apple, Microsoft and
-Google. The data is often very sensitive in nature (e.g. Photos, Contacts, Calendars) and is rarely encrypted. 
+Google. The data is often very sensitive in nature (e.g. photos, contacts, calendar) and is usually not encrypted before
+it leaves your devices.
 
-This project aims to provide a detailed tutorial on how to set up, use and maintain your own energy-efficient "cloud"
+This project aims to provide a detailed tutorial on how to host your data on your own energy-efficient "cloud"
 server without compromising much in terms of functionality and convenience.
 
 Most of the tedious work of setting up the server has been automated with scripts, such that it can be installed from
@@ -22,7 +23,7 @@ impossible to suit everyone. So, to successfully follow this tutorial, you shoul
   already have a home network, at least a wireless one (which is all we need).
 - Knowledge about how to connect a new device to your home network (wirelessly or with a cable)
 - A keyboard and mouse with USB A connectors
-- A TV or computer monitor with a HDMI A input (almost all recent devices have such an input)
+- A TV or computer monitor with a HDMI A input (most recent devices have such an input)
 - A HDMI cable with two HMDI A connectors
 - At least USD 80 (or equivalent) to buy the hardware for your new home server. The actual cost depends on your location
   and your requirements for storage space.

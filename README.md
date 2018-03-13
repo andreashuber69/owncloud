@@ -4,13 +4,15 @@
 These days, many people store almost all of their data with a cloud service offered by the likes of Apple, Microsoft and
 Google. The data is often very sensitive in nature (e.g. Photos, Contacts, Calendars) and is rarely encrypted. 
 
-This project aims to provide a detailed tutorial on how to set up, use and maintain your own alternative to such a
-cloud service without compromising much in terms of functionality and convenience. The center piece is a tiny,
-energy-efficient server running in your home 24/7.
+This project aims to provide a detailed tutorial on how to set up, use and maintain your own energy-efficient "cloud"
+server without compromising much in terms of functionality and convenience.
+
+Most of the tedious work of setting up the server has been automated with scripts, such that it can be installed from
+scratch with less than ten minutes of your attention.
 
 ## Audience & Prerequisites
 While I try very hard to clearly describe every tiny step on the way to your data sovereignity, I do realize that it's
-impossible to suit everyone. So, to successfully follow these instructions, you should at least have the following:
+impossible to suit everyone. So, to successfully follow this tutorial, you should at least have the following:
 - Experience using a current desktop or laptop computer (running **Linux**, **Mac OS** or **Windows**) with a keyboard
   and mouse
 - Experience on the command line (i.e. in a terminal window): The instructions will clearly detail exactly what commands
@@ -22,7 +24,8 @@ impossible to suit everyone. So, to successfully follow these instructions, you 
 - A keyboard and mouse with USB A connectors
 - A TV or computer monitor with a HDMI A input (almost all recent devices have such an input)
 - A HDMI cable with two HMDI A connectors
-- Spare USD 70 (or equivalent) to buy the hardware for your new home server
+- At least USD 80 (or equivalent) to buy the hardware for your new home server. The actual cost depends on your location
+  and your requirements for storage space.
 - A day of spare time to set up and test everything
 - A minute or two per week to make a backup copy of your data 
 
@@ -47,7 +50,11 @@ likely that they can be implemented with **ownCloud**.
 > mobile. However, for my purposes this is a price worth paying (because it's much harder to hack something that is not
 > reachable from the internet).
 > It's possible to make an **ownCloud** server in your home network reachable from the internet (so that it then acts
-> much like any other cloud service), but doing so is beyond the scope of this documentation.
+> much like any other cloud service), but doing so is beyond the scope of this tutorial.
+
+## Feedback
+Please use the [GitHub Issue Tracker](https://github.com/andreashuber69/owncloud/issues) to ask your questions, report
+problems or suggest improvements. Thank you!
 
 ## Ready, Set, Go!
 With all of the above out of the way, let's get started!

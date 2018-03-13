@@ -33,7 +33,7 @@ Acquire **FolderSync** or **FolderSync Pro** through the **Google Play Store** a
 2. Fill out the form as follows:
    - **Unique name**: This can be any unique string. It's probably easiest to describe what is being synchronized, e.g.
      *Pictures*.
-   - **Account**: The account created under [B](B-add-an-account)
+   - **Account**: The account created under [B](#b-add-an-account)
    - **Sync type**: **To local folder**
    - **Remote folder**: The remote folder you want sync to your phone, e.g. *Photos*
    - **Local folder**: The local folder you want to sync to, e.g. *Pictures*

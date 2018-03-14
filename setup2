@@ -55,6 +55,9 @@ cd $current_directory
 # correctly. The || true at the end makes sure that the script continues.
 sudo crontab -u www-data -l | { cat; echo "*/15  *  *  *  * /usr/bin/php -f /var/www/html/owncloud/cron.php"; } | sudo crontab -u www-data - || true
 
+# Display SSL fingerprint so that it can be verified in the browser we're going to open next
+openssl x509 -in /etc/ssl/certs/ssl-cert-snakeoil.pem -noout -sha1 -fingerprint
+
 if [ -x "$(command -v xdg-open)" ]; then
   # Open browser on Raspbian (doesn't work on Lite)
   xdg-open "https://$ip_address/owncloud" &

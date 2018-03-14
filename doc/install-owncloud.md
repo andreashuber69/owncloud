@@ -23,19 +23,31 @@ and boot the freshly installed OS.
 1. On **Raspbian**, open a terminal window (**Raspbian Lite** boots directly to the command line).
 2. `cd owncloud`
 3. `./setup2` (prompts for the credentials for the **ownCloud** administrator)
+4. Wait for the script to finish. Leave the terminal window open, we'll need it again in the next step.
 
 ## D. Install ownCloud Contacts and Tasks Apps
 1. Direct your browser to *https://[Raspberry Pi IP address]/owncloud* (on **Raspbian** the script does this
    automatically). The very first time you do this, the browser will show you a warning like the following:
    ![Invalid CA](invalid-ca.png)
-2. Enter the credentials you provided under [C](#c-install-owncloud).
-3. Click the menu icon in the top left corner and click **Market**.
-4. Click the **Productivity** category and the **Contacts** app.
-5. Click **Install** in the bottom right corner.
-6. Click the **Productivity** category and the **Tasks** app.
-7. Click **Install** in the bottom right corner.
-8. If you plan on hosting your calendar in **ownCloud**, you can install that app too. Note however that I've not
-   tested this in any way.
+2. While showing the warning, most browsers will also display warning icons in their address bar. Here's how this
+   looks in **Chromium**:
+   ![Address Bar Warning](address-bar.png)
+   In most browsers, you can now click on **Not Secure** and then proceed to show the certificate, which will contain
+   the SHA-1 fingerprint.
+3. Verify the SHA-1 fingerprint shown by the browser is the same as the one that has been displayed in the terminal
+   window.
+4. If the fingerprints match, close the certificate window and click **ADVANCED** and **Proceed to .... (unsafe)**.
+   The procedure varies slightly depending on your browser. The next time you direct your browser to the same address
+   it will no longer display the warning but you will likely still see the red icons in the address bar. See
+   [F](f-display-certificate-fingerprint-on-raspbian) for more information.
+5. Enter the credentials you provided under [C](#c-install-owncloud).
+6. Click the menu icon in the top left corner and click **Market**.
+7. Click the **Productivity** category and the **Contacts** app.
+8. Click **Install** in the bottom right corner.
+9. Click the **Productivity** category and the **Tasks** app.
+10. Click **Install** in the bottom right corner.
+11. If you plan on hosting your calendar in **ownCloud**, you can install that app too. Note however that I've not
+    tested this in any way.
 
 ## E. Add ownCloud Users
 1. Direct your browser to *https://[Raspberry Pi IP address]/owncloud*.
@@ -48,9 +60,10 @@ and boot the freshly installed OS.
 ## F. Display Certificate Fingerprint on Raspbian
 When SSL is activated in **Apache**, a self-signed certificate is generated. By default, **Apache** presents this
 certificate whenever it receives a https connection request. However, since the certificate is not signed by a
-certification authority (CA) like e.g. **Verisign**, the client cannot verify that it did get the correct
-certificate. This has to be done manually, by comparing the fingerprint of the received certificate with the one
-of the certificate on the server. The following steps display the fingerprint on the **Raspberry Pi**:
+certification authority (CA) like e.g. **Verisign**, the client (e.g. a browser) cannot verify that it did get the
+correct certificate. This has to be done manually, by comparing the fingerprint of the received certificate with the one
+of the certificate on the server. If the terminal window you've opened under [B](#b-customize-raspbian) is still open,
+you can skip the following steps, otherwise here's how the fingerprint can be displayed again on the **Raspberry Pi**:
 1. On **Raspbian**, open a terminal window (**Raspbian Lite** boots directly to the command line).
 2. `openssl x509 -in /etc/ssl/certs/ssl-cert-snakeoil.pem -noout -sha1 -fingerprint`
 

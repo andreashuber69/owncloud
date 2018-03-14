@@ -9,15 +9,22 @@ The following steps describe how to set up **ownCloud** on a **Raspberry Pi 3 Mo
 > required for https.
 
 ## A. Install the OS
-Use [NOOBS or NOOBS Lite](https://www.raspberrypi.org/downloads/noobs/) to install **Raspbian** or **Raspbian Lite**
-and boot the freshly installed OS.
+1. If you've purchased a kit that included a **microSD** card, then the card is likely preconfigured such that you can
+   just insert the card into the **Raspberry Pi**. If you've purchased the card separately, you'll need to first
+   download [NOOBS or NOOBS Lite](https://www.raspberrypi.org/downloads/noobs/) on another computer, copy it to the
+   card and then insert the card into the **Raspberry Pi**.
+2. Follow the instructions included with the **Raspberry Pi** to connect it to a monitor, a keyboard and a mouse.
+3. Connect the power cable. Within moments the screen should come to live.
+4. Follow the on-screen procedure to install **Raspbian** or **Raspbian Lite** and boot the freshly installed OS.  
 
 ## B. Customize Raspbian
-1. On **Raspbian**, open a terminal window (**Raspbian Lite** boots directly to the command line).
-2. `sudo apt-get install git --assume-yes`
-3. `git clone https://github.com/andreashuber69/owncloud`
-4. `cd owncloud`
-5. `./setup1` (this will reboot the **Raspberry Pi** when everything is done)
+1. If you haven't already done so during OS installation, you should now connect the **Raspberry Pi** to a network. This
+   can either be done with a network cable or by joining a WLAN (click on the network icon in the top-right corner).
+2. On **Raspbian**, open a terminal window (**Raspbian Lite** boots directly to the command line).
+3. `sudo apt-get install git --assume-yes`
+4. `git clone https://github.com/andreashuber69/owncloud`
+5. `cd owncloud`
+6. `./setup1` (this will reboot the **Raspberry Pi** when everything is done)
 
 ## C. Install ownCloud
 1. On **Raspbian**, open a terminal window (**Raspbian Lite** boots directly to the command line).

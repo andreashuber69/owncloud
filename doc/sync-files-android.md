@@ -42,7 +42,7 @@ Acquire **FolderSync** or **FolderSync Pro** through the **Google Play Store** a
    - **Sync deletions**: **On**
    - **Allowed WiFi SSID's**: The name of the wireless LAN through which the **Raspberry Pi** running **ownCloud** can
      be reached. It's optional to fill this out, but it's a good idea, so that your phone will not attempt to
-     synchronize when it's connected to different WLANs.
+     synchronize when it's connected to other WLANs.
    - **Show notification on sync error**: **On**
    - All other fields retain their default value.
 3. Tap **SAVE**.

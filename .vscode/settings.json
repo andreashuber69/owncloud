@@ -1,3 +1,24 @@
 {
-    "git.confirmSync": false
+    "git.confirmSync": false,
+    "cSpell.ignoreWords": [
+        "vdroid"
+    ],
+    "cSpell.words": [
+        "fairphone",
+        "folderpair",
+        "folderpairs",
+        "noobs",
+        "noout",
+        "openssl",
+        "owncloud",
+        "raspbian",
+        "snakeoil",
+        "ssid",
+        "ssid's",
+        "unchecking",
+        "untrusted",
+        "wirelessly",
+        "wlans",
+        "yalp"
+    ]
 }

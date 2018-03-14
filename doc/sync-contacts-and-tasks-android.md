@@ -18,7 +18,7 @@ Install **DAVdroid** and **OpenTasks** for free through [F-Droid](https://f-droi
    [E. Add ownCloud Users](install-owncloud.md#e-add-owncloud-users).
 7. Tap **LOGIN**.
 8. Compare the displayed SHA-1 fingerprint with the one we've displayed under
-   [F. Display Certificate Fingerprint on Raspbian](install-owncloud.md#f-display-cerificate-fingerprint-on-raspbian).
+   [F. Display Certificate Fingerprint on Raspbian](install-owncloud.md#f-display-certificate-fingerprint-on-raspbian).
    If the fingerprint matches, check **I have manually verified the whole fingerprint** and tap **ACCEPT**.
 9. Select **Groups are per-contact categories** and tap **CREATE ACCOUNT**.
 10. Tap the account you just created and allow access to your contacts, calendars and task lists (if prompted).

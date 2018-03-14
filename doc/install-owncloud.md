@@ -1,5 +1,5 @@
-# ownCloud
-The following steps describe how I've set up **ownCloud** on my **Raspberry Pi 3 Model B**.
+# Install ownCloud
+The following steps describe how to set up **ownCloud** on a **Raspberry Pi 3 Model B**.
 
 > **Note:** The **ownCloud** instance installed with the instructions below will be accessible through both https and
 > http. https is preferred because it is the only reliable way to transmit sensitive data securely. However, security
@@ -44,7 +44,7 @@ and boot the freshly installed OS.
    use the **ownCloud** administrator to create other users, not for anything else).
 5. In the top right corner, click on the admin user name and **Logout**.
 
-## F. Display Cerificate Fingerprint on Raspbian
+## F. Display Certificate Fingerprint on Raspbian
 When SSL is activated in **Apache**, a self-signed certificate is generated. By default, **Apache** presents this
 certificate whenever it receives a https connection request. However, since the certificate is not signed by a
 certification authority (CA) like e.g. **Verisign**, the client cannot verify that it did get the correct

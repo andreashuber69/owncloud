@@ -23,7 +23,7 @@ The following steps assume that you've [successfully setup ownCloud](install-own
    **Server Address** and click **Next >**.
 2. In the **Untrusted Certificate** dialog, compare the displayed SHA-1 fingerprint with the one we've displayed
    under
-   [F. Display Certificate Fingerprint on Raspbian](install-owncloud.md#f-display-cerificate-fingerprint-on-raspbian).
+   [F. Display Certificate Fingerprint on Raspbian](install-owncloud.md#f-display-certificate-fingerprint-on-raspbian).
    If the fingerprint matches, check **Trust this certificate anyway** and click **OK**.
 3. Enter the **Username** and **Password** of an **ownCloud** user created under
    [E. Add ownCloud Users](install-owncloud.md#e-add-owncloud-users) and click **Next >**.

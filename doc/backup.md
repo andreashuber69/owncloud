@@ -1,5 +1,4 @@
 # Backup
-
 The following steps assume that you've [successfully setup ownCloud](install-owncloud.md).
 
 1. On **Raspbian**, open a terminal window (**Raspbian Lite** boots directly to the command line).

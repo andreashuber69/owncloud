@@ -42,7 +42,7 @@ and boot the freshly installed OS.
 4. If the fingerprints match, close the certificate window and click **ADVANCED** and **Proceed to .... (unsafe)**.
    The procedure varies slightly depending on your browser. The next time you direct your browser to the same address
    it will no longer display the warning but you will likely still see the red icons in the address bar. See
-   [F](f-display-certificate-fingerprint-on-raspbian) for more information.
+   [F](#f-display-certificate-fingerprint-on-raspbian) for more information.
 5. Enter the credentials you provided under [C](#c-install-owncloud).
 6. Click the menu icon in the top left corner and click **Market**.
 7. Click the **Productivity** category and the **Contacts** app.

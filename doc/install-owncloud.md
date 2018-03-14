@@ -28,10 +28,13 @@ and boot the freshly installed OS.
 ## D. Install ownCloud Contacts and Tasks Apps
 1. Direct your browser to *https://[Raspberry Pi IP address]/owncloud* (on **Raspbian** the script does this
    automatically). The very first time you do this, the browser will show you a warning like the following:
+   
    ![Invalid CA](invalid-ca.png)
 2. While showing the warning, most browsers will also display warning icons in their address bar. Here's how this
    looks in **Chromium**:
+
    ![Address Bar Warning](address-bar.png)
+
    In most browsers, you can now click on **Not Secure** and then proceed to show the certificate, which will contain
    the SHA-1 fingerprint.
 3. Verify the SHA-1 fingerprint shown by the browser is the same as the one that has been displayed in the terminal

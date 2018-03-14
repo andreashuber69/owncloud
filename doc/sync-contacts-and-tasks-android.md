@@ -1,4 +1,4 @@
-# Sync Contacts and Tasks with Android
+# Sync Contacts, Calendars and Tasks with Android
 
 The following steps assume that you've [successfully setup ownCloud](install-owncloud.md).
 
@@ -29,7 +29,7 @@ Install **DAVdroid** and **OpenTasks** for free through [F-Droid](https://f-droi
 Run the built-in **Contacts** app. You should now see all the **ownCloud** contacts synchronized in the previous step
 (if any). Moreover, when creating a new contact, you should now have the option to store it in **ownCloud**. 
 
-## D. Create a Tasks list
+## D. Create and Use a Tasks List
 1. Run **DAVdroid**.
 2. Tap the account created under [B](#b-sync-owncloud-contacts-calendars-and-tasks-to-your-android-phone).
 3. Tap the **CalDAV** menu button and tap **Create new calendar**.

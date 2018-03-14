@@ -39,7 +39,7 @@ This tutorial covers the following:
 - How to set up automatic file sync between **ownCloud** and **Windows** and/or **Ubuntu** PCs
 - How to set up automatic file sync between **ownCloud** and **Android** phones
 - How to import contacts into **ownCloud** via **vCard** files
-- How to set up automated contacts sync between **ownCloud** and **Android** phones
+- How to set up automated calendar and contacts sync between **ownCloud** and **Android** phones
 - How to set up automated tasks sync between **ownCloud** and **Android** phones
 
 It is worth noting that **ownCloud** is a very feature-rich platform. So, if you have additional requirements, it's
@@ -61,6 +61,6 @@ problems or suggest improvements. Thank you!
 ## Ready, Set, Go!
 With all of the above out of the way, let's get started!
 
-### A. Hardware
+### [A. Hardware](doc/hardware.md)
 
 ### [B. Software](doc/install-owncloud.md)

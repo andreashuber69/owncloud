@@ -57,7 +57,7 @@ sudo crontab -u www-data -l | { cat; echo "*/15  *  *  *  * /usr/bin/php -f /var
 
 if [ -x "$(command -v xdg-open)" ]; then
   # Open browser on Raspbian (doesn't work on Lite)
-  xdg-open "http://$ip_address/owncloud" &
+  xdg-open "https://$ip_address/owncloud" &
 else
-  echo "Direct your web browser to: http://$ip_address/owncloud"
+  echo "Direct your web browser to: https://$ip_address/owncloud"
 fi

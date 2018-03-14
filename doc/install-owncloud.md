@@ -26,7 +26,8 @@ and boot the freshly installed OS.
 
 ## D. Install ownCloud Contacts and Tasks Apps
 1. Direct your browser to *https://[Raspberry Pi IP address]/owncloud* (on **Raspbian** the script does this
-   automatically).
+   automatically). The very first time you do this, the browser will show you a warning like the following:
+   ![Invalid CA](invalid-ca.png)
 2. Enter the credentials you provided under [C](#c-install-owncloud).
 3. Click the menu icon in the top left corner and click **Market**.
 4. Click the **Productivity** category and the **Contacts** app.

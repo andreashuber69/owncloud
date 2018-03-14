@@ -3,10 +3,12 @@
 ## Introduction
 These days, many people store almost all of their data with a cloud service offered by the likes of Apple, Microsoft and
 Google. The data is often very sensitive in nature (e.g. photos, contacts, calendar) and is usually not encrypted before
-it leaves your devices.
+it's transmitted to the cloud.
 
 This project aims to provide a detailed tutorial on how to host your data on your own energy-efficient "cloud"
-server without compromising much in terms of functionality and convenience.
+server without compromising much in terms of functionality and convenience. More precisely, once set up, your devices
+will behave exactly as they would connected to a commercial cloud service, except that your data is now stored on a
+server that is under your exclusive control.
 
 Most of the tedious work of setting up the server has been automated with scripts, such that it can be installed from
 scratch with less than ten minutes of your attention.
@@ -28,11 +30,11 @@ impossible to suit everyone. So, to successfully follow this tutorial, you shoul
 - At least USD 80 (or equivalent) to buy the hardware for your new home server. The actual cost depends on your location
   and your requirements for storage space.
 - A day of spare time to set up and test everything
-- A minute or two per week to make a backup copy of your data 
+- A minute or two per week to make a backup copy of your data
 
 ## Scope
 This tutorial covers the following:
-- What to buy and how to build your **Raspberry Pi** box (main board, power supply, storage card, housing)
+- What to buy for your **Raspberry Pi** box (main board, power supply, storage card, housing)
 - How to install **ownCloud** on your **Raspberry Pi**
 - How to backup **ownCloud** data
 - How to restore **ownCloud** data
@@ -42,8 +44,8 @@ This tutorial covers the following:
 - How to set up automated calendar and contacts sync between **ownCloud** and **Android** phones
 - How to set up automated tasks sync between **ownCloud** and **Android** phones
 
-It is worth noting that **ownCloud** is a very feature-rich platform. So, if you have additional requirements, it's
-likely that they can be implemented with **ownCloud**.
+**ownCloud** is a very feature-rich platform. So, if you have additional requirements, it's likely that they can be
+implemented with **ownCloud**.
 
 > Note: My **ownCloud** server (along with all other devices in my home network) is not reachable from the internet
 > (which is the default behavior for pretty much all home internet routers and modems). When I'm traveling, this is

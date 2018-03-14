@@ -8,8 +8,9 @@ power supply) you might end up paying less by just ordering single items.
 ### Required Items
 - **Raspberry Pi 3 B** main board
 - Heatsinks for the CPU and the memory chip
-- Fast **microSD** card with 16GB or more
-- High quality 5V power supply, with a guaranteed 2.5A or higher
+- Fast **microSD** card with 16GB or more: 16GB is enough to store a virtually limitless number of contacts, tasks and
+  calendar entries. Enlarge according to your requirements for file storage.
+- High quality 5V power supply, with a 2.5A or higher rating
 - Case
 
 ### Optional Items
@@ -20,7 +21,6 @@ power supply) you might end up paying less by just ordering single items.
   the CPU will automatically throttle back should it ever become critically hot.
 
 ## Assembling Your Raspberry Pi Box
-The main board and/or the kit should include instructions, but sadly guidance on how to handle electronics is often
-missing:  
+The purchased parts should come with instructions, but sadly guidance on how to handle electronics is often missing:  
 - You should ground yourself beforehand e.g. by touching a metal water spigot.
 - Try to avoid direct contact with any of the components on the main board, by only touching the edges.

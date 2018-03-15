@@ -10,6 +10,9 @@ power supply) you might end up paying less by just ordering single items.
 - Heatsinks for the CPU and the memory chip
 - Fast **microSD** card with 16GB or more: 16GB is enough to store a virtually limitless number of contacts, tasks and
   calendar entries. Enlarge according to your requirements for file storage.
+- USB 3.0 flash drives of the same size as your **microSD** card. You will use these to make periodic backups of the
+  data on the server. Theoretically one is sufficient, but it might be a good idea to rotate through a few, so that you
+  could restore a file that you've accidentally deleted say 2 weeks ago.
 - High quality 5V power supply, with a 2.5A or higher rating
 - Case
 

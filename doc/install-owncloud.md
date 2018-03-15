@@ -72,12 +72,15 @@ When SSL is activated in **Apache**, a self-signed certificate is generated. By 
 certificate whenever it receives a https connection request. However, since the certificate is not signed by a
 certification authority (CA) like e.g. **Verisign**, the client (e.g. a browser) cannot verify that it did get the
 correct certificate. This has to be done manually, by comparing the fingerprint of the received certificate with the one
-of the certificate on the server. If the terminal window you've opened under [B](#b-customize-raspbian) is still open,
+of the certificate on the server. If the terminal window you've opened under [C](#c-install-owncloud) is still open,
 you can skip the following steps, otherwise here's how the fingerprint can be displayed again on the **Raspberry Pi**:
 1. On **Raspbian**, open a terminal window (**Raspbian Lite** boots directly to the command line).
 2. `openssl x509 -in /etc/ssl/certs/ssl-cert-snakeoil.pem -noout -sha1 -fingerprint`
 
 ## G. Next Steps
+Now that the centerpiece is set up, we can proceed to connect devices to it. It is advisable however, that you first
+make yourself familiar with the backup and restore process.
+
 - [Backup](backup.md)
 - [Restore](restore.md)
 - [Sync Files (Android)](sync-files-android.md)

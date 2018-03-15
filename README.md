@@ -18,8 +18,8 @@ While I try very hard to clearly describe every tiny step on the way to your dat
 impossible to suit everyone. So, to successfully follow this tutorial, you should at least have the following:
 - Experience using a current desktop or laptop computer (running **Linux**, **Mac OS** or **Windows**) with a keyboard
   and mouse
-- Experience on the command line (i.e. in a terminal window): The instructions will clearly detail exactly what commands
-  need to be issued, so that you only need to copy-paste them into the terminal window.
+- **Experience on the command line** (i.e. in a terminal window): The instructions will clearly detail exactly what
+  commands need to be issued, so that you only need to copy-paste them into the terminal window.
 - Experience using a current mobile phone running **Android** (optional if you don't plan to sync data with a mobile)
 - A home network: As soon as you have the box of an internet provider running in your home, chances are very high you
   already have a home network, at least a wireless one (which is all we need).

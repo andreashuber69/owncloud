@@ -8,4 +8,13 @@ set -o pipefail
 # Set options that require reboot
 sudo raspi-config nonint do_memory_split 32
 sudo raspi-config nonint do_change_locale en_US.UTF-8
+
+# Install NTFS write support. NTFS seems to be most widely supported among the different operating systems.
+# Tests with exFAT seemed to go smoothly initially, but USB sticks quickly developed errors after writing to them a
+# couple of times. Moreover, exFAT write speed was about half of NTFS write speed on Raspbian. 
+sudo apt-get install ntfs-3g --assume-yes
+
+# Update and upgrade
+sudo apt-get update
+sudo apt-get upgrade --assume-yes
 sudo reboot

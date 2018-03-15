@@ -30,7 +30,9 @@ The following steps describe how to set up **ownCloud** on a **Raspberry Pi 3 Mo
 1. On **Raspbian**, open a terminal window (**Raspbian Lite** boots directly to the command line).
 2. `cd owncloud`
 3. `./setup2` (prompts for the credentials for the **ownCloud** administrator)
-4. Wait for the script to finish. Leave the terminal window open, we'll need it again in the next step.
+4. Wait for the script to finish. If everything went smoothly, then you should see
+   `ownCloud installation completed successfully.`.
+5. Leave the terminal window open, we'll need it again in the next steps.
 
 ## D. Install ownCloud Contacts and Tasks Apps
 1. Direct your browser to *https://[Raspberry Pi IP address]/owncloud* (on **Raspbian** the script does this
@@ -42,8 +44,8 @@ The following steps describe how to set up **ownCloud** on a **Raspberry Pi 3 Mo
 
    ![Address Bar Warning](address-bar.png)
 
-   In most browsers, you can now click on **Not Secure** and then proceed to show the certificate, which will contain
-   the SHA-1 fingerprint.
+   You can now click on **Not Secure** and then proceed to show the certificate, which will contain the SHA-1
+   fingerprint.
 3. Verify the SHA-1 fingerprint shown by the browser is the same as the one that has been displayed in the terminal
    window.
 4. If the fingerprints match, close the certificate window and click **ADVANCED** and **Proceed to .... (unsafe)**.

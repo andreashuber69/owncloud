@@ -46,6 +46,11 @@ The following steps describe how to set up **ownCloud** on a **Raspberry Pi 3 Mo
 
    You can now click on **Not Secure** and then proceed to show the certificate, which will contain the SHA-1
    fingerprint.
+
+   > Note: The version of **Chromium** that currently ships with **Raspbian** makes this a more complicated than
+   > necessary as the certificate cannot be displayed by default. You first have to navigate to
+   > *chrome://flags/#show-cert-link* in a separate tab and then click **Enable** and **RELAUNCH NOW**. After the
+   > browser has restarted you can finally click on **Not Secure** and then display the certificate.
 3. Verify the SHA-1 fingerprint shown by the browser is the same as the one that has been displayed in the terminal
    window.
 4. If the fingerprints match, close the certificate window and click **ADVANCED** and **Proceed to .... (unsafe)**.

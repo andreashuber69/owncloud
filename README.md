@@ -21,8 +21,8 @@ impossible to suit everyone. So, to successfully follow this tutorial, you shoul
 - **Experience on the command line** (i.e. in a terminal window): The instructions will clearly detail exactly what
   commands need to be issued, so that you only need to copy-paste them into the terminal window.
 - Experience using a current mobile phone running **Android** (optional if you don't plan to sync data with a mobile)
-- A home network: As soon as you have the box of an internet provider running in your home, chances are very high you
-  already have a home network, at least a wireless one (which is all we need).
+- A home network: If you have the box of an internet provider running in your home, chances are very high you also have
+  a home network, at least a wireless one (which is all we need).
 - Knowledge about how to connect a new device to your home network (wirelessly or with a cable)
 - A keyboard and mouse with USB A connectors
 - A TV or computer monitor with a HDMI A input (most recent devices have such an input)

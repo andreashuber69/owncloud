@@ -14,12 +14,13 @@ The following steps describe how to set up **ownCloud** on a **Raspberry Pi 3 Mo
    download [NOOBS or NOOBS Lite](https://www.raspberrypi.org/downloads/noobs/) on another computer, copy it to the
    card and then insert the card into the **Raspberry Pi**.
 2. Follow the instructions included with the **Raspberry Pi** to connect it to a monitor, a keyboard and a mouse.
-3. Connect the power cable. Within moments the screen should come to live.
-4. Follow the on-screen procedure to install **Raspbian** or **Raspbian Lite** and boot the freshly installed OS.  
+3. Connect the power cable. Within moments the screen should come to life.
+4. Follow the on-screen instructions to install **Raspbian** or **Raspbian Lite** and boot the freshly installed OS.
 
 ## B. Customize Raspbian
-1. If you haven't already done so during OS installation, you should now connect the **Raspberry Pi** to a network. This
-   can either be done with a network cable or by joining a WLAN (click on the network icon in the top-right corner).
+1. If you haven't already done so during OS installation, you should now connect the **Raspberry Pi** to your home
+   network. This can either be done with a network cable or by joining a WLAN (click on the network icon in the
+   top-right corner). It is assumed that a device connected your home network has access to the internet.
 2. On **Raspbian**, open a terminal window (**Raspbian Lite** boots directly to the command line).
 3. `sudo apt-get install git --assume-yes`
 4. `git clone https://github.com/andreashuber69/owncloud`
@@ -47,7 +48,7 @@ The following steps describe how to set up **ownCloud** on a **Raspberry Pi 3 Mo
    You can now click on **Not Secure** and then proceed to show the certificate, which will contain the SHA-1
    fingerprint.
 
-   > Note: The version of **Chromium** that currently ships with **Raspbian** makes this a more complicated than
+   > Note: The version of **Chromium** that currently ships with **Raspbian** makes this more complicated than
    > necessary as the certificate cannot be displayed by default. You first have to navigate to
    > *chrome://flags/#show-cert-link* in a separate tab and then click **Enable** and **RELAUNCH NOW**. After the
    > browser has restarted you can finally click on **Not Secure** and then display the certificate.

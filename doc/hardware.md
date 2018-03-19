@@ -9,10 +9,15 @@ power supply) you might end up paying less by just ordering single items.
 - **Raspberry Pi 3 B** main board
 - Heatsinks for the CPU and the memory chip
 - Fast **microSD** card with 16GB or more: 16GB is enough to store a virtually limitless number of contacts, tasks and
-  calendar entries. Enlarge according to your requirements for file storage.
+  calendar entries. Enlarge according to your requirements for file storage. Right now, 128GB cards are cheapest in
+  terms of cents per GB. 256GB are a bit more expensive but still bearable. For even higher space requirements, it's
+  probably worth considering a USB flash drive or even a USB SSD. These are markedly cheaper in cents per GB, but also
+  use more power. Note that the tutorial assumes a **microSD** card and therefore does not discuss how to integrate
+  external storage.
 - USB 3.0 flash drives of the same size as your **microSD** card. You will use these to make periodic backups of the
-  data on the server. Theoretically one is sufficient, but it might be a good idea to rotate through a few, so that you
-  could restore a file that you've accidentally deleted say 2 weeks ago.
+  data on the server. Theoretically two are sufficient, so that you always have one good backup even if the hardware
+  fails when you're in the middle of writing a backup. However, it might be a good idea to rotate through a few, so that
+  you could restore a file that you've accidentally deleted say 2 weeks ago.
 - High quality 5V power supply, with a 2.5A or higher rating
 - Case
 

@@ -1,5 +1,8 @@
 {
-    "git.confirmSync": false,
+    "cSpell.enabledLanguageIds": [
+        "markdown",
+        "plaintext"
+    ],
     "cSpell.ignoreWords": [
         "vdroid"
     ],
@@ -24,5 +27,6 @@
         "wlan",
         "wlans",
         "yalp"
-    ]
+    ],
+    "git.confirmSync": false
 }

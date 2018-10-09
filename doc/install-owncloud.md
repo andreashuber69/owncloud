@@ -18,9 +18,11 @@ The following steps describe how to set up **ownCloud** on a **Raspberry Pi 3 Mo
 4. Follow the on-screen instructions to install **Raspbian** or **Raspbian Lite** and boot the freshly installed OS.
 
 ## B. Customize Raspbian
-1. If you haven't already done so during OS installation, you should now connect the **Raspberry Pi** to your home
-   network. This can either be done with a network cable or by joining a WLAN (click on the network icon in the
+1. On **Raspian**, follow the instructions in the **Welcome to Raspberry Pi** wizard to customize and connect the
+   **Raspberry Pi** to your home network (if you haven't already done so during installation). This
+   can either be done with a network cable or by joining a WLAN (click on the network icon in the
    top-right corner). It is assumed that a device connected your home network has access to the internet.
+   On **Raspian Lite**, you have to finalize the OS installation manually (password, timezone, keyboard, network).
 2. On **Raspbian**, open a terminal window (**Raspbian Lite** boots directly to the command line).
 3. `sudo apt-get install git --assume-yes`
 4. `git clone https://github.com/andreashuber69/owncloud`

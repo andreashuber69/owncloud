@@ -10,14 +10,15 @@ read -p "ownCloud admin username: " owncloud_admin_user
 read -s -p "ownCloud admin password: " owncloud_admin_password
 
 # Install Apache and packages required by ownCloud
-sudo apt-get install -y apache2 mariadb-server libapache2-mod-php7.2 \
-    openssl php-imagick php7.2-common php7.2-curl php7.2-gd \
-    php7.2-imap php7.2-intl php7.2-json php7.2-ldap php7.2-mbstring \
-    php7.2-mysql php7.2-pgsql php-smbclient php-ssh2 \
-    php7.2-sqlite3 php7.2-xml php7.2-zip
+# php7.2 is not yet available for raspbian
+sudo apt-get install -y apache2 mariadb-server libapache2-mod-php7.0 \
+    openssl php-imagick php7.0-common php7.0-curl php7.0-gd \
+    php7.0-imap php7.0-intl php7.0-json php7.0-ldap php7.0-mbstring \
+    php7.0-mysql php7.0-pgsql php-smbclient php-ssh2 \
+    php7.0-sqlite3 php7.0-xml php7.0-zip
 
 
-sudo apt-get install -y php-apcu php-redis redis-server php7.2-ldap
+sudo apt-get install -y php-apcu php-redis redis-server php7.0-ldap
 sudo systemctl start apache2
 sudo systemctl enable apache2
 

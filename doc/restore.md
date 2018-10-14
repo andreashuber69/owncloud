@@ -1,4 +1,5 @@
 # Restore
+
 It is assumed that you've [successfully setup ownCloud](install-owncloud.md) and that you've
 [created a backup](backup.md).
 
@@ -6,6 +7,7 @@ You can either fully restore a server to the state it had when the backup was ma
 files that were accidentally deleted.
 
 ## Full Restore
+
 If you'd like to restore a backup after setting up **ownCloud** from scratch, you need to follow the **ownCloud** setup
 instructions up to and including step
 [D. Install ownCloud Contacts and Tasks Apps](install-owncloud.md#d-install-owncloud-contacts-and-tasks-apps).
@@ -17,6 +19,7 @@ instructions up to and including step
 4. `./restore /media/pi/Backup`
 
 ## Partial Restore
+
 A partial restore of one or more files is best not performed on the **Raspberry Pi** itself, but **on a desktop or
 laptop computer** that has been set up to sync files with your server.
 

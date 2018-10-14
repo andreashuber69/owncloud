@@ -1,5 +1,6 @@
 # Install ownCloud
-The following steps describe how to set up **ownCloud** on a **Raspberry Pi 3 Model B**.
+
+The following steps describe how to set up **ownCloud** on a **Raspberry Pi 3 Model B+**.
 
 > **Note:** The **ownCloud** instance installed with the instructions below will be accessible through both https and
 > http. https is preferred because it is the only reliable way to transmit sensitive data securely. However, security
@@ -9,6 +10,7 @@ The following steps describe how to set up **ownCloud** on a **Raspberry Pi 3 Mo
 > required for https.
 
 ## A. Install the OS
+
 1. If you've purchased a kit that included a **microSD** card, then the card is likely preconfigured such that you can
    just insert the card into the **Raspberry Pi**. If you've purchased the card separately, you'll need to first
    download [NOOBS or NOOBS Lite](https://www.raspberrypi.org/downloads/noobs/) on another computer, copy it to the
@@ -18,11 +20,12 @@ The following steps describe how to set up **ownCloud** on a **Raspberry Pi 3 Mo
 4. Follow the on-screen instructions to install **Raspbian** or **Raspbian Lite** and boot the freshly installed OS.
 
 ## B. Customize Raspbian
-1. On **Raspian**, follow the instructions in the **Welcome to Raspberry Pi** wizard to customize and connect the
+
+1. On **Raspbian**, follow the instructions in the **Welcome to Raspberry Pi** wizard to customize and connect the
    **Raspberry Pi** to your home network (if you haven't already done so during installation). This
-   can either be done with a network cable or by joining a WLAN (click on the network icon in the
-   top-right corner). It is assumed that a device connected your home network has access to the internet.
-   On **Raspian Lite**, you have to finalize the OS installation manually (password, timezone, keyboard, network).
+   can either be done with a network cable or by joining a WLAN. It is assumed that a device connected your home network
+   has access to the internet.
+   On **Raspbian Lite**, you have to finalize the OS installation manually (password, timezone, keyboard, network).
 2. On **Raspbian**, open a terminal window (**Raspbian Lite** boots directly to the command line).
 3. `sudo apt-get install git --assume-yes`
 4. `git clone https://github.com/andreashuber69/owncloud`
@@ -30,6 +33,7 @@ The following steps describe how to set up **ownCloud** on a **Raspberry Pi 3 Mo
 6. `./setup1` (this will reboot the **Raspberry Pi** when everything is done)
 
 ## C. Install ownCloud
+
 1. On **Raspbian**, open a terminal window (**Raspbian Lite** boots directly to the command line).
 2. `cd owncloud`
 3. `./setup2` (prompts for the credentials for the **ownCloud** administrator)
@@ -38,9 +42,10 @@ The following steps describe how to set up **ownCloud** on a **Raspberry Pi 3 Mo
 5. Leave the terminal window open, we'll need it again in the next steps.
 
 ## D. Install ownCloud Contacts and Tasks Apps
+
 1. Direct your browser to *https://[Raspberry Pi IP address]/owncloud* (on **Raspbian** the script does this
    automatically). The very first time you do this, the browser will show you a warning like the following:
-   
+
    ![Invalid CA](invalid-ca.png)
 2. While showing the warning, most browsers will also display warning icons in their address bar. Here's how this
    looks in **Chromium**:
@@ -65,6 +70,7 @@ The following steps describe how to set up **ownCloud** on a **Raspberry Pi 3 Mo
     tested this in any way.
 
 ## E. Add ownCloud Users
+
 1. Direct your browser to *https://[Raspberry Pi IP address]/owncloud*.
 2. If not already logged in, log into ownCloud with the credentials you provided under [C](#c-install-owncloud).
 3. In the top right corner, click on the admin user name and **Users**.
@@ -73,16 +79,19 @@ The following steps describe how to set up **ownCloud** on a **Raspberry Pi 3 Mo
 5. In the top right corner, click on the admin user name and **Logout**.
 
 ## F. Display Certificate Fingerprint on Raspbian
+
 When SSL is activated in **Apache**, a self-signed certificate is generated. By default, **Apache** presents this
 certificate whenever it receives a https connection request. However, since the certificate is not signed by a
 certification authority (CA) like e.g. **Verisign**, the client (e.g. a browser) cannot verify that it did get the
 correct certificate. This has to be done manually, by comparing the fingerprint of the received certificate with the one
 of the certificate on the server. If the terminal window you've opened under [C](#c-install-owncloud) is still open,
 you can skip the following steps, otherwise here's how the fingerprint can be displayed again on the **Raspberry Pi**:
+
 1. On **Raspbian**, open a terminal window (**Raspbian Lite** boots directly to the command line).
 2. `openssl x509 -in /etc/ssl/certs/ssl-cert-snakeoil.pem -noout -sha1 -fingerprint`
 
 ## G. Next Steps
+
 Now that the centerpiece is set up, we can proceed to connect devices to it. It is advisable however, that you first
 make yourself familiar with the backup and restore process.
 

@@ -3,6 +3,7 @@
 The following steps assume that you've [successfully setup ownCloud](install-owncloud.md).
 
 ## A. Install FolderSync on your Android phone
+
 Acquire **FolderSync** or **FolderSync Pro** through the **Google Play Store** app.
 
 > Note: If you have a phone without the **Google Play Store** app (like e.g. a **Fairphone 2** running
@@ -10,6 +11,7 @@ Acquire **FolderSync** or **FolderSync Pro** through the **Google Play Store** a
 > through [F-Droid](https://f-droid.org) and then acquire **FolderSync** through **Yalp Store**.
 
 ## B. Add an Account
+
 1. Make sure your **Android** phone is connected to the same network as the **Raspberry Pi** running **ownCloud**. If
    unsure, direct your browser to *https://[Raspberry Pi IP address]/owncloud*. You should see the **ownCloud** login
    screen.
@@ -29,6 +31,7 @@ Acquire **FolderSync** or **FolderSync Pro** through the **Google Play Store** a
 7. Tap the **Back** button to go back to the **FolderSync** main screen.
 
 ## C. Add a Folderpair
+
 1. Tap **Folderpairs** and the **+** button in the bottom right corner.
 2. Fill out the form as follows:
    - **Unique name**: This can be any unique string. It's probably easiest to describe what is being synchronized, e.g.

@@ -1,24 +1,28 @@
 # Sync Files with a Desktop Computer
+
 The following steps assume that you've [successfully setup ownCloud](install-owncloud.md).
 
 ## A. Install the ownCloud Desktop Client
 
 ### Windows
-1. Download and run the [ownCloud Windows Client Installer](https://download.owncloud.com/desktop/stable/ownCloud-2.4.0.8894-setup.exe).
+
+1. Download and run the [ownCloud Windows Client Installer](https://download.owncloud.com/desktop/stable/ownCloud-2.5.0.10598.msi).
 2. Accept the defaults by clicking **Next >**, **Next >** and **Install**.
 3. Click **Next >** and **Finish**.
 
-### Ubuntu 17.10
+### Ubuntu 18.04
+
 1. Open a terminal window.
-2. `echo "deb http://download.opensuse.org/repositories/isv:/ownCloud:/desktop/Ubuntu_17.10/ /" | sudo tee -a /etc/apt/sources.list.d/owncloud-client.list`
-3. `wget -O ownCloud.key https://download.opensuse.org/repositories/isv:ownCloud:desktop/Ubuntu_17.10/Release.key`
+2. `sudo sh -c "echo 'deb http://download.opensuse.org/repositories/isv:/ownCloud:/desktop/Ubuntu_18.04/ /' > /etc/apt/sources.list.d/isv:ownCloud:desktop.list"`
+3. `wget -nv https://download.opensuse.org/repositories/isv:ownCloud:desktop/Ubuntu_18.04/Release.key -O ownCloud.key`
 4. `sudo apt-key add - < ownCloud.key`
 5. `rm ownCloud.key`
 6. `sudo apt-get update`
-7. `sudo apt-get install owncloud-client`
+7. `sudo apt-get install owncloud-client --assume-yes`
 8. `owncloud &`
 
-## B. Configure the ownClout Desktop Client 
+## B. Configure the ownClout Desktop Client
+
 1. In the **ownCloud Connection Wizard** enter *https://[Raspberry Pi IP address]/owncloud* for the
    **Server Address** and click **Next >**.
 2. In the **Untrusted Certificate** dialog, compare the displayed SHA-1 fingerprint with the one we've displayed
@@ -32,4 +36,4 @@ The following steps assume that you've [successfully setup ownCloud](install-own
    computer is started.  
 
 The chosen local folder is now synchronized with the remote folder. Locally added files will automatically be
-copied to **ownCloud**. Locally removed files will automatically deleted from **ownCloud**. 
+copied to **ownCloud**. Locally removed files will automatically deleted from **ownCloud**.

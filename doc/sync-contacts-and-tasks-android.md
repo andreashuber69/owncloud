@@ -3,10 +3,12 @@
 The following steps assume that you've [successfully setup ownCloud](install-owncloud.md).
 
 ## A. Install DAVdroid & OpenTasks on your Android Phone
+
 Install **DAVdroid** and **OpenTasks** for free through [F-Droid](https://f-droid.org) or acquire them through the
 **Google Play Store** app.
 
 ## B. Sync ownCloud Contacts, Calendars and Tasks to your Android Phone
+
 1. Make sure your **Android** phone is connected to the same network as the **Raspberry Pi** running **ownCloud**. If
    unsure, direct your browser to *https://[Raspberry Pi IP address]/owncloud*. You should see the **ownCloud** login
    screen.
@@ -26,10 +28,12 @@ Install **DAVdroid** and **OpenTasks** for free through [F-Droid](https://f-droi
     for the progress bars to stop moving.
 
 ## C. Use ownCloud Contacts on your Phone
+
 Run the built-in **Contacts** app. You should now see all the **ownCloud** contacts synchronized in the previous step
-(if any). Moreover, when creating a new contact, you should now have the option to store it in **ownCloud**. 
+(if any). Moreover, when creating a new contact, you should now have the option to store it in **ownCloud**.
 
 ## D. Create and Use a Tasks List
+
 1. Run **DAVdroid**.
 2. Tap the account created under [B](#b-sync-owncloud-contacts-calendars-and-tasks-to-your-android-phone).
 3. Tap the **CalDAV** menu button and tap **Create new calendar**.

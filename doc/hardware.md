@@ -1,4 +1,4 @@
-# Acquiring and Assembling Your Raspberry Pi 3 B
+# Acquiring and Assembling Your Raspberry Pi 3 B+
 
 ## What to Buy
 
